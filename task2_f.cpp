@@ -32,7 +32,6 @@ int main(int argc, char* argv[])
     double eps = atof(argv[1]);
     int rank, size;
     MPI_Init(&argc, &argv);
-    MPI_Barrier(MPI_COMM_WORLD);
     double start_time = MPI_Wtime();
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &size);
